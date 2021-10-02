@@ -14,7 +14,7 @@ type Response struct {
 
 // GetStatus returns always the same response.
 func GetStatus(w http.ResponseWriter, _ *http.Request) {
-	b := Response{Status: "idle"}
+	b := Response{Status: "Working on it, roger roger that affirmative"}
 	json.NewEncoder(w).Encode(b)
 }
 
